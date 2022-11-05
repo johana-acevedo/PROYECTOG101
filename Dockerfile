@@ -8,4 +8,4 @@
 
  COPY . .
 
- CDM ["node", "index.js "]
+ CMD [ "node",index.js ] 
