@@ -4,25 +4,30 @@ const usuarioSchema =new mongoose.Schema (
     {
         nameuser: {
             type: String,
-            require:  true,
-            unique: true
+            require:  true
+            
         },
         password:{
             type: String,
-            require: true,
-
+            require: true
+            
 
         },
         correo:{
             type: String,
             require: true,
-            unique: true,
-        },
+            unique: true
+        }
+    },
+    {
+        timestamps:true,
+        versionKey:false,
+    }   
 
-    }
 
+   
 );
-export default mongoose.model("user", usuarioSchema );
-
+export const usuario = mongoose.model ('users',usuarioSchema);
+export default usuario;
 
 

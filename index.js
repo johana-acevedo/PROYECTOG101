@@ -7,7 +7,7 @@
     const  app =express();
     app.use(cors());
     app.use(express.json());
-    app.use('/usuarios',router);
+    app.use('/',router);
 
      
 

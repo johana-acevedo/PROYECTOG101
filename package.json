@@ -17,5 +17,8 @@
   "keywords": [],
   "author": "johana acevedo",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "dotenv": "^16.0.3"
+  }
 }
